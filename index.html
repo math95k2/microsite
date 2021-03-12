@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello, world!</title>
+    <title>Microsite</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -14,9 +14,9 @@
       crossorigin="anonymous"
     />
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">EATERS</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,22 +31,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
+              <a class="nav-link active" aria-current="page" href="#mission"
+                >Mission</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#produkter">Produkter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ingredienser">Ingredienser</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#join">Besøg os</a>
             </li>
           </ul>
         </div>
@@ -54,7 +50,70 @@
     </nav>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <!-- fundet på startbootstrap.com -->
+
+    <header>
+      <video
+        class="size"
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="dreng_spiser_slik.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-black">
+            <h1 class="display-3">Video Header</h1>
+            <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- fundet på startbootstrap.com -->
+
+      
+    <section id="mission">
+      <h1>Mission</h1>
+      <div class="mission">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          odio felis, fermentum ac sodales id, convallis nec nulla. Integer
+          tincidunt massa ullamcorper augue consequat, sit amet lobortis dolor
+          rhoncus. Curabitur quis quam semper, tempus augue vel, consectetur
+          odio. Vivamus tempor nisi sem, id venenatis odio tincidunt ut.
+          Praesent quis mattis justo. Nulla varius porttitor laoreet. In varius
+          quam id mi pharetra, ac facilisis tellus posuere. Mauris at est est.
+          Nulla pharetra massa ac sem hendrerit, sed maximus justo vehicula. Ut
+          quis rutrum enim, at eleifend lorem. Suspendisse quis sapien urna.
+          Nulla mi justo, molestie vel augue et, interdum tincidunt leo. </p>
+          <img src="" alt="" />
+        </p>
+      </div>
+    </section>
+
+    <section id="produkter">
+        <h1>Produkter</h1>
+        <div>
+            <img src="img/mockup.jpg" alt="produkt">
+            <img src="img/mockup.jpg" alt="produkt">
+            <img src="img/mockup.jpg" alt="produkt">
+        </div>
+    </section>
+
+    <section id="ingredienser">
+        <h1>Ingredienser</h1>
+        <img src="img/infographic.jpg" alt="infografik">
+    </section>
+
+    <section id="join">
+        <h1>Besøg os</h1>
+        <img src="img/600px-Facebook_logo_(square).png" alt="facebook_logo">
+        <img src="img/600px-Instagram_icon.png" alt="instagram_logo">
+    </section>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
