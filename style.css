@@ -8,8 +8,7 @@ body {
 
 header {
   position: relative;
-  background-color: black;
-  height: 75vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -17,17 +16,7 @@ header {
 
 header video {
   position: absolute;
-  top: 100%;
-  left: 60%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  max-width: 100%;
 }
 
 header .container {
@@ -36,10 +25,6 @@ header .container {
 }
 
 @media (pointer: coarse) and (hover: none) {
-  header {
-    background: url("dreng_spiser_slik_2.mp4") black no-repeat center center
-      scroll;
-  }
   header video {
     display: none;
   }
@@ -69,16 +54,17 @@ h1 {
   background-color: #f59f7a !important;
   padding-left: 30px;
   padding-right: 30px;
-  font-weight: bold;
   box-shadow: 0 10px 10px 0 rgba(136, 136, 136, 0.1);
 }
 
 nav a:hover {
-  color: #f5e08e !important;
+  color: white !important;
 }
 
 a {
-  color: white !important;
+  color: #f5e08e !important;
+  font-weight: bold;
+  margin-right: 40px;
 }
 
 p {
@@ -99,17 +85,19 @@ p {
 #produkter,
 #ingredienser,
 #join {
-  margin-top: 250px;
-  margin-bottom: 250px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   min-height: 700px;
+  padding: 50px;
 }
 
-#section10 a {
+#section10 {
+  position: relative;
   padding-top: 60px;
 }
-#section10 a span {
+#section10 span {
   position: absolute;
-  top: 90%;
+  top: 400%;
   left: 50%;
   width: 30px;
   height: 50px;
@@ -118,7 +106,7 @@ p {
   border-radius: 50px;
   box-sizing: border-box;
 }
-#section10 a span::before {
+#section10 span::before {
   position: absolute;
   top: 10px;
   left: 50%;
@@ -163,4 +151,54 @@ p {
   100% {
     opacity: 0;
   }
+}
+
+footer {
+  margin: 40px;
+  color: white;
+  font-style: italic;
+}
+
+.op-0 {
+  opacity: 0;
+}
+
+#section10,
+#produkter {
+  opacity: 1;
+}
+
+.zoom {
+  transition: transform 0.5s; /* Animation */
+  margin: 0 auto;
+  max-height: 18vh;
+  max-width: 18vw;
+}
+
+.zoom:hover {
+  animation: tada;
+  animation-duration: 1.2s;
+}
+
+#join img {
+  cursor: pointer;
+}
+
+#produkter {
+  position: relative;
+  padding: 20px;
+}
+
+.p3 {
+  width: 100%;
+  left: 20%;
+}
+.p2 {
+  width: 100%;
+  left: 50%;
+}
+.p1 {
+  width: 100%;
+  z-index: 1000;
+  left: 80%;
 }
