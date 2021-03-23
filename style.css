@@ -62,13 +62,15 @@ header .container {
 h1 {
   font-family: "Lobster", cursive;
   font-size: 3em;
+  margin-bottom: 40px;
 }
 
 .navbar {
   background-color: #f59f7a !important;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-weight: bold;
+  box-shadow: 0 10px 10px 0 rgba(136, 136, 136, 0.1);
 }
 
 nav a:hover {
@@ -81,4 +83,84 @@ a {
 
 p {
   font-family: Helvetica, sans-serif;
+}
+
+#join h1,
+#produkter h1 {
+  text-align: right;
+}
+
+#join,
+#produkter {
+  background-color: #abaff5;
+}
+
+#mission,
+#produkter,
+#ingredienser,
+#join {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  min-height: 700px;
+}
+
+#section10 a {
+  padding-top: 60px;
+}
+#section10 a span {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section10 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
